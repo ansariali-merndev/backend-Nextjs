@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "text": "Finish building the portfolio website",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "text": "Learn how to use Cloudinary for image uploads",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "text": "Add saved jobs feature using Context API",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "text": "Deploy the job portal backend to Hostinger",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "text": "Push latest changes to GitHub repository",
+    "completed": true
+  }
+]

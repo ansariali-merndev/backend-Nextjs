@@ -1,37 +1,17 @@
 [
      {
-          "id": 1,
-          "text": "Finish building the portfolio website",
+          "id": "9b9fa458-29ab-4146-92c7-6d6fd8ff0a60",
+          "text": "Learn Next js",
           "completed": false
      },
      {
-          "id": 2,
-          "text": "Learn how to use Cloudinary for image uploads",
-          "completed": true
-     },
-     {
-          "id": 3,
-          "text": "Add saved jobs feature using Context API",
+          "id": "02b8a0d4-2d0e-4c26-bd78-ed47253ef734",
+          "text": "Data Structure Algorithm",
           "completed": false
      },
      {
-          "id": 4,
-          "text": "Deploy the job portal backend to Hostinger",
+          "id": "60f47832-90ae-47cb-ac8f-406c4cd5f904",
+          "text": "Master Backend with Node js",
           "completed": false
-     },
-     {
-          "id": 5,
-          "text": "Learn Git Github",
-          "completed": false
-     },
-     {
-          "id": 6,
-          "text": "Master Nodejs",
-          "completed": false
-     },
-     {
-          "id": 7,
-          "text": "Learn DSA in Java language",
-          "completed": true
      }
 ]

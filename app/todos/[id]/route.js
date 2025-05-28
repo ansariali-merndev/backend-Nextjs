@@ -28,14 +28,27 @@ export async function PUT(request, { params }) {
   const todoIndex = todos.findIndex((item) => parseInt(id) === item.id);
   if (todoIndex === -1) {
     return Response.json({
-      message: "Todo Not Find",
+      message: "Todo Not Found",
     });
   }
   const updatedTodo = { ...todos[todoIndex], ...todoData };
-  todos[todoIndex] = updatedTodo;
-  await writeFile("data/todos.json", JSON.stringify(todos, null, 5));
+  const updatedTodos = [...todos];
+  updatedTodos[todoIndex] = updatedTodo;
+  await writeFile("data/todos.json", JSON.stringify(updatedTodos, null, 5));
+
   return Response.json({
     message: "success",
     todo: updatedTodo,
+  });
+}
+
+export async function DELETE(request, context) {
+  const { params } = context;
+  const { id } = await params;
+  const updatedTodos = todos.filter((item) => item.id !== id);
+  await writeFile("data/todos.json", JSON.stringify(updatedTodos, null, 5));
+  return Response.json({
+    message: "success",
+    data: updatedTodos,
   });
 }

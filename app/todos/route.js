@@ -11,7 +11,7 @@ export function GET() {
 export async function POST(request, context) {
   const { text } = await request.json();
   const newTodo = {
-    id: todos.length + 1,
+    id: crypto.randomUUID(),
     text,
     completed: false,
   };
@@ -19,6 +19,6 @@ export async function POST(request, context) {
   await writeFile("data/todos.json", JSON.stringify(todos, null, 5));
   return Response.json({
     message: "success",
-    todo: newTodo,
+    data: todos,
   });
 }

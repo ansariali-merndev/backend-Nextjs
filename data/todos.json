@@ -21,8 +21,8 @@
      },
      {
           "id": 5,
-          "text": "Push latest changes to GitHub repository",
-          "completed": true
+          "text": "Learn Git Github",
+          "completed": false
      },
      {
           "id": 6,
@@ -32,6 +32,6 @@
      {
           "id": 7,
           "text": "Learn DSA in Java language",
-          "completed": false
+          "completed": true
      }
 ]
